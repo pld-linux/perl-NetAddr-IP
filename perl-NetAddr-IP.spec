@@ -12,7 +12,7 @@ Version:	3.21
 Release:	1
 License:	Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/NetAddr/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	c6033bdadf356daf4bd4658247f5362e
 URL:		http://search.cpan.org/dist/NetAddr-IP/
 BuildRequires:	perl-devel >= 1:5.8.0
