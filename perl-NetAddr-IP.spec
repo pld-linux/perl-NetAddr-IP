@@ -18,9 +18,9 @@ URL:		http://search.cpan.org/dist/NetAddr-IP/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
-BuildRequires:	perl(Math::BigInt)
-BuildRequires:	perl(Module::Signature)
 BuildRequires:	perl(Test::More)
+BuildRequires:	perl-Math-BigInt
+BuildRequires:	perl-Module-Signature
 %endif
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -61,7 +61,7 @@ rm -rf $RPM_BUILD_ROOT
 %{perl_vendorarch}/NetAddr/IP/Util_IS.pm
 %dir %{perl_vendorarch}/auto/NetAddr/IP/Util
 %{perl_vendorarch}/auto/NetAddr/IP/Util/Util.bs
-%attr(755,root,root)    %{perl_vendorarch}/auto/NetAddr/IP/Util/Util.so
+%attr(755,root,root) %{perl_vendorarch}/auto/NetAddr/IP/Util/Util.so
 %{perl_vendorarch}/auto/NetAddr/IP/Util/autosplit.ix
 %{perl_vendorarch}/auto/NetAddr/IP/Util/*.al
 %dir %{perl_vendorarch}/auto/NetAddr/IP/UtilPP
