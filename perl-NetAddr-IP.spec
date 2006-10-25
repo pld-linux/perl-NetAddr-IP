@@ -8,12 +8,12 @@
 Summary:	NetAddr::IP - Manages IPv4 and IPv6 addresses and subnets
 Summary(pl):	NetAddr::IP - zarz±dzanie adresami i podsieciami IPv4 i IPv6
 Name:		perl-NetAddr-IP
-Version:	3.24
+Version:	4.004
 Release:	1
 License:	Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	62c91d3b010f20e2a192d6e59d59d3be
+# Source0-md5:	4f0ef938abf0b1e43ca96fb0068381df
 URL:		http://search.cpan.org/dist/NetAddr-IP/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -45,8 +45,6 @@ podsieci IP pozwalaj±c± na ³atwe operacje.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{perl_vendorlib}/NetAddr/IP
-
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
@@ -56,6 +54,20 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README TODO
-%{perl_vendorlib}/NetAddr/*.pm
-%dir %{perl_vendorlib}/NetAddr/IP
+%{perl_vendorarch}/NetAddr/IP.pm
+%dir %{perl_vendorarch}/NetAddr/IP
+%{perl_vendorarch}/NetAddr/IP/Lite.pm
+%{perl_vendorarch}/NetAddr/IP/Util.pm
+%{perl_vendorarch}/NetAddr/IP/UtilPP.pm
+%{perl_vendorarch}/NetAddr/IP/Util_IS.pm
+%dir %{perl_vendorarch}/auto/NetAddr/IP/Util
+%{perl_vendorarch}/auto/NetAddr/IP/Util/Util.bs
+%attr(755,root,root)    %{perl_vendorarch}/auto/NetAddr/IP/Util/Util.so
+%{perl_vendorarch}/auto/NetAddr/IP/Util/autosplit.ix
+%{perl_vendorarch}/auto/NetAddr/IP/Util/*.al
+%dir %{perl_vendorarch}/auto/NetAddr/IP/UtilPP
+%{perl_vendorarch}/auto/NetAddr/IP/UtilPP/autosplit.ix
+%{perl_vendorarch}/auto/NetAddr/IP/UtilPP/*.al
+%{perl_vendorarch}/auto/NetAddr/IP/autosplit.ix
+%{perl_vendorarch}/auto/NetAddr/IP/*.al
 %{_mandir}/man3/*
