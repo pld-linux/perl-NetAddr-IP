@@ -22,7 +22,6 @@ BuildRequires:	perl(Math::BigInt)
 BuildRequires:	perl(Module::Signature)
 BuildRequires:	perl(Test::More)
 %endif
-BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
