@@ -19,6 +19,7 @@ BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
 BuildRequires:	perl(Math::BigInt)
+BuildRequires:	perl(Module::Signature)
 BuildRequires:	perl(Test::More)
 %endif
 BuildArch:	noarch
