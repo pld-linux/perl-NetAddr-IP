@@ -6,7 +6,7 @@
 %define	pdir	NetAddr
 %define	pnam	IP
 Summary:	NetAddr::IP - Manages IPv4 and IPv6 addresses and subnets
-Summary(pl):	NetAddr::IP - zarz±dzanie adresami i podsieciami IPv4 i IPv6
+Summary(pl.UTF-8):   NetAddr::IP - zarzÄ…dzanie adresami i podsieciami IPv4 i IPv6
 Name:		perl-NetAddr-IP
 Version:	4.004
 Release:	2
@@ -28,9 +28,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 This module provides an object-oriented abstraction on top of IP
 addresses or IP subnets, that allows for easy manipulations.
 
-%description -l pl
-Ten modu³ dostarcza obiektowo zorientowan± abstrakcjê dla adresów lub
-podsieci IP pozwalaj±c± na ³atwe operacje.
+%description -l pl.UTF-8
+Ten moduÅ‚ dostarcza obiektowo zorientowanÄ… abstrakcjÄ™ dla adresÃ³w lub
+podsieci IP pozwalajÄ…cÄ… na Å‚atwe operacje.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
