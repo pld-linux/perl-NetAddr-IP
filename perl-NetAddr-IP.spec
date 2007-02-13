@@ -6,7 +6,7 @@
 %define	pdir	NetAddr
 %define	pnam	IP
 Summary:	NetAddr::IP - Manages IPv4 and IPv6 addresses and subnets
-Summary(pl.UTF-8):   NetAddr::IP - zarządzanie adresami i podsieciami IPv4 i IPv6
+Summary(pl.UTF-8):	NetAddr::IP - zarządzanie adresami i podsieciami IPv4 i IPv6
 Name:		perl-NetAddr-IP
 Version:	4.004
 Release:	2
