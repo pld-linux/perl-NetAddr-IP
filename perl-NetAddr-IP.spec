@@ -66,7 +66,6 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{perl_vendorarch}/auto/NetAddr/IP/Util
 %attr(755,root,root) %{perl_vendorarch}/auto/NetAddr/IP/Util/*.so
 %{perl_vendorarch}/auto/NetAddr/IP/Util/*.ix
-%{perl_vendorarch}/auto/NetAddr/IP/Util/Util.bs
 %dir %{perl_vendorarch}/auto/NetAddr/IP/UtilPP
 %{perl_vendorarch}/auto/NetAddr/IP/UtilPP/*.ix
 %{perl_vendorarch}/auto/NetAddr/IP/UtilPP/*.al
