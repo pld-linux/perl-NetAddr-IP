@@ -8,12 +8,12 @@
 Summary:	NetAddr::IP - Manages IPv4 and IPv6 addresses and subnets
 Summary(pl.UTF-8):	NetAddr::IP - zarządzanie adresami i podsieciami IPv4 i IPv6
 Name:		perl-NetAddr-IP
-Version:	4.058
-Release:	7
+Version:	4.079
+Release:	1
 License:	Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	8829958dd84a8b36e3cd10347564739d
+# Source0-md5:	990dfcbffae356835c536e8ab56a2880
 URL:		http://search.cpan.org/dist/NetAddr-IP/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
