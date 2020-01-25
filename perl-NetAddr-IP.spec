@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	tests		# do not perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define	pdir	NetAddr
 %define	pnam	IP
 Summary:	NetAddr::IP - Manages IPv4 and IPv6 addresses and subnets
